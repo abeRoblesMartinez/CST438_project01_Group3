@@ -8,7 +8,7 @@
         android:id="@+id/search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="search"
+        android:hint="Search"
         android:layout_marginTop="50dp"
 
         />
@@ -33,6 +33,23 @@
         android:id="@+id/addBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Update Filters"
+
+
+        />
+    <EditText
+        android:id="@+id/newsSourceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" News Source (i.e. Reuters)"
+        android:layout_marginTop="50dp"
+
+        />
+    <Button
+        android:id="@+id/newsSourceBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update News Source"
 
 
         />

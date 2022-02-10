@@ -11,13 +11,15 @@ public class User {
     public Integer uid;
     private String username;
     private String password;
+    private String newsSource;
 
     public User() {
     }
 
-    public User(String username, String password) {
+    public User(String username, String password, String newsSource) {
         this.username = username;
         this.password = password;
+        this.newsSource = newsSource;
     }
 
     public String getUsername() {
@@ -32,8 +34,16 @@ public class User {
         return password;
     }
 
-    public void setAge(String age) {
+    public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getNewsSource() {
+        return newsSource;
+    }
+
+    public void setNewsSource(String newsSource) {
+        this.newsSource = newsSource;
     }
 
     @NonNull
