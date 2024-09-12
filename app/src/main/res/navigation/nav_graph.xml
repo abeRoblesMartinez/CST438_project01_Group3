@@ -14,6 +14,13 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <argument
+            android:name="UserId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <action
+            android:id="@+id/action_FirstFragment_to_userRegister"
+            app:destination="@id/userRegister" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -23,6 +30,15 @@
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userRegister"
+        android:name="com.daclink.drew.sp22.cst438_project01_starter.UserRegister"
+        android:label="fragment_user_register"
+        tools:layout="@layout/fragment_user_register" >
+        <action
+            android:id="@+id/action_userRegister_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
 </navigation>

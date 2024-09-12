@@ -1,6 +1,6 @@
 package com.daclink.drew.sp22.cst438_project01_starter;
 
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 import static org.junit.Assert.*;
 
